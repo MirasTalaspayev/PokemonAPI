@@ -20,8 +20,13 @@ namespace PokemonAPI.Controllers
             csvFile = _csvfile;
         }
         [HttpGet]
-        public IEnumerable<Pokemon> Get(int page = 1)
+        public IEnumerable<Pokemon> Get(int page = 1, string name = null)
         {
+            if (!string.IsNullOrEmpty(name))
+            {
+                var poks = from p in csvFile.GetPokemons() where p.Name == name select p;
+                return poks;
+            }
             var pokemons = csvFile.GetPokemons();
             var model = PagingList.Create(pokemons, 10, page);
             return model;
