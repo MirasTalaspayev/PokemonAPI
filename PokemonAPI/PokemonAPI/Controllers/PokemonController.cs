@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PokemonAPI.Models;
 using PokemonAPI.Services;
+using ReflectionIT.Mvc.Paging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,9 +20,11 @@ namespace PokemonAPI.Controllers
             csvFile = _csvfile;
         }
         [HttpGet]
-        public IEnumerable<Pokemon> Get()
+        public IEnumerable<Pokemon> Get(int page = 1)
         {
-            return csvFile.GetPokemons();
+            var pokemons = csvFile.GetPokemons();
+            var model = PagingList.Create(pokemons, 10, page);
+            return model;
         }
     }
 }
