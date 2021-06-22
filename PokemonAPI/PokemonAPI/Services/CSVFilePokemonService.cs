@@ -1,4 +1,5 @@
-﻿using PokemonAPI.Models;
+﻿using Microsoft.AspNetCore.Hosting;
+using PokemonAPI.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,8 +10,16 @@ namespace PokemonAPI.Services
 {
     public class CSVFilePokemonService
     {
-        private string DataFile = @"C:\Users\Miras Talaspayev\source\repos\Contests\Codified_CodeSubmit\Data\pokemon.csv";
-        public IEnumerable<Pokemon> GetPokemons()
+        private IWebHostEnvironment webHostEnvironment;
+        public CSVFilePokemonService(IWebHostEnvironment _webHostEnvironment)
+        {
+            webHostEnvironment = _webHostEnvironment;
+        }
+        private string DataFile
+        {
+            get { return Path.Combine(webHostEnvironment.ContentRootPath, "Data", "pokemon.csv"); }
+        }
+        public List<Pokemon> GetPokemons()
         {
             List<Pokemon> pokemons = new List<Pokemon>();
             string[] csvLines = File.ReadAllLines(DataFile);
