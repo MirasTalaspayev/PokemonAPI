@@ -7,10 +7,6 @@ C:\Users\Miras Talaspayev\source\repos\Contests\Codified_CodeSubmit\PokemonAPI\P
 C:\Users\Miras Talaspayev\source\repos\Contests\Codified_CodeSubmit\PokemonAPI\PokemonAPI\bin\Debug\net5.0\PokemonAPI.dll
 C:\Users\Miras Talaspayev\source\repos\Contests\Codified_CodeSubmit\PokemonAPI\PokemonAPI\bin\Debug\net5.0\ref\PokemonAPI.dll
 C:\Users\Miras Talaspayev\source\repos\Contests\Codified_CodeSubmit\PokemonAPI\PokemonAPI\bin\Debug\net5.0\PokemonAPI.pdb
-C:\Users\Miras Talaspayev\source\repos\Contests\Codified_CodeSubmit\PokemonAPI\PokemonAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\Miras Talaspayev\source\repos\Contests\Codified_CodeSubmit\PokemonAPI\PokemonAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Miras Talaspayev\source\repos\Contests\Codified_CodeSubmit\PokemonAPI\PokemonAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Miras Talaspayev\source\repos\Contests\Codified_CodeSubmit\PokemonAPI\PokemonAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Miras Talaspayev\source\repos\Contests\Codified_CodeSubmit\PokemonAPI\PokemonAPI\obj\Debug\net5.0\PokemonAPI.csprojAssemblyReference.cache
 C:\Users\Miras Talaspayev\source\repos\Contests\Codified_CodeSubmit\PokemonAPI\PokemonAPI\obj\Debug\net5.0\PokemonAPI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Miras Talaspayev\source\repos\Contests\Codified_CodeSubmit\PokemonAPI\PokemonAPI\obj\Debug\net5.0\PokemonAPI.AssemblyInfoInputs.cache
