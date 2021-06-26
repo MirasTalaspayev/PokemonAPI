@@ -66,6 +66,10 @@ namespace PokemonAPI.Controllers
             var model = PagingList.Create(pokemons, 10, page);
             return model;
         }
-
+        [HttpGet("{id}")]
+        public Pokemon Get(int id)
+        {
+            return csvFile.GetPokemons().FirstOrDefault(pokemon => pokemon.Id == id);
+        }
     }
 }
